@@ -1,4 +1,4 @@
-const inputString = document.getElementById("input_number");
+const inputString = document.getElementById("input_text");
 const outputString = document.getElementById("output_number");
 const enterButton =document.getElementById("enter_button");
 
