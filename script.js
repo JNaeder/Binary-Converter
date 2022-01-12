@@ -1,5 +1,6 @@
 const inputString = document.getElementById("input_text");
 const outputString = document.getElementById("output_text");
+const copyButton = document.getElementById("copy_button");
 
 function convertToBinary(num){
     let output = "";
@@ -33,4 +34,11 @@ function convertTextToBinary(inputString){
 
 inputString.addEventListener('input', function(){
     outputString.textContent = convertTextToBinary(inputString.value);
+})
+
+copyButton.addEventListener('click', function(){
+    // window.getSelection().selectAllChildren(outputString);
+    // document.execCommand("copy");
+    // window.getSelection();
+    navigator.clipboard.writeText(outputString.textContent);
 })
