@@ -1,6 +1,9 @@
 const inputString = document.getElementById("input_text");
 const outputString = document.getElementById("output_text");
 const copyButton = document.getElementById("copy_button");
+const githubButton = document.getElementById("github_button");
+
+const githubURL = "https://github.com/JNaeder/Binary-Converter";
 
 function convertToBinary(num){
     let output = "";
@@ -37,8 +40,10 @@ inputString.addEventListener('input', function(){
 })
 
 copyButton.addEventListener('click', function(){
-    // window.getSelection().selectAllChildren(outputString);
-    // document.execCommand("copy");
-    // window.getSelection();
     navigator.clipboard.writeText(outputString.textContent);
 })
+
+githubButton.addEventListener('click', function(){
+    window.open(githubURL, "_blank");
+})
+

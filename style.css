@@ -45,7 +45,7 @@ body{
     text-align: center;
 }
 
-#copy_button{
+.button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     /* margin: 0 auto; */
@@ -58,10 +58,10 @@ body{
     width: 100px;
 }
 
-#copy_button:hover{
+.button:hover{
     background-color: #6aa0f8;
 }
 
-#copy_button:active {
+.button:active {
     background-color: #2559ad;
 }
