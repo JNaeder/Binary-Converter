@@ -1,6 +1,5 @@
 const inputString = document.getElementById("input_text");
-const outputString = document.getElementById("output_number");
-const enterButton =document.getElementById("enter_button");
+const outputString = document.getElementById("output_text");
 
 function convertToBinary(num){
     let output = "";
@@ -31,10 +30,6 @@ function convertTextToBinary(inputString){
     return charArray.join(" ");
 
 }
-
-enterButton.addEventListener('click', function(){
-    outputString.textContent = convertTextToBinary(inputString.value);
-})
 
 inputString.addEventListener('input', function(){
     outputString.textContent = convertTextToBinary(inputString.value);
