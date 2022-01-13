@@ -1,5 +1,9 @@
 const inputString = document.getElementById("input_text");
 const outputString = document.getElementById("output_text");
+
+const bitCountText = document.getElementById("bit_count");
+const byteCountText = document.getElementById('byte_count');
+
 const copyButton = document.getElementById("copy_button");
 const githubButton = document.getElementById("github_button");
 
@@ -35,8 +39,18 @@ function convertTextToBinary(inputString){
 
 }
 
+function countBits(){
+    let stringArray = outputString.textContent.split(" ");
+    if(stringArray[0].length === 0) stringArray = [];
+    let bitCount = stringArray.length * 8;
+    let byteCount = bitCount/8;
+    bitCountText.textContent = `Bitcount: ${bitCount.toString().padStart(8, 0)}`;
+    byteCountText.textContent = `Bytecount: ${byteCount.toString().padStart(8,0)}`;
+}
+
 inputString.addEventListener('input', function(){
     outputString.textContent = convertTextToBinary(inputString.value);
+    countBits();
 })
 
 copyButton.addEventListener('click', function(){

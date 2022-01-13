@@ -37,6 +37,11 @@ body{
     margin: 15px auto;
 }
 
+.counting_section{
+    display: flex;
+    justify-content: center;
+}
+
 #output_text{
     /* background-color: rgb(255, 0, 0); */
     font-family: 'Times New Roman', Times, serif;
