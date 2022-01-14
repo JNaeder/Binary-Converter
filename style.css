@@ -1,15 +1,16 @@
-/* *{
-    border: red solid 1px;
-} */
+*{
+    margin: 0;
+}
 body{
     background-color: #4285F4;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .main_section{
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     margin: 20px auto;
     width: 70%;
 }
@@ -26,6 +27,7 @@ body{
 
 .input_section{
     margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
 }
@@ -34,10 +36,17 @@ body{
     background-color: rgb(223, 223, 223);
     border: solid #4285F4 2px;
     border-radius: 10px;
-    padding: 51px;
+    padding: 5px;
     width: 90%;
     min-height: 120px;
-    margin: 0 auto;
+    margin: 10px auto;
+}
+
+#output_text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 20px;margin: 10px auto;
+    text-align: center;
 }
 
 .counting_section{
@@ -48,21 +57,20 @@ body{
 .counter{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    margin: 20px;
+    margin: 0px 20px;
 }
 
-#output_text{
-    /* background-color: rgb(255, 0, 0); */
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 100;
-    font-size: 20px;
-    text-align: center;
+.button_section{
+    display: flex;
+    justify-content:space-evenly;
+    width: 30%;
+    margin: 30px auto 0;
 }
+
 
 .button{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    /* margin: 0 auto; */
     background-color: #4285F4;
     color: white;
     outline: none;
