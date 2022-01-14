@@ -44,8 +44,8 @@ function countBits(){
     if(stringArray[0].length === 0) stringArray = [];
     let bitCount = stringArray.length * 8;
     let byteCount = bitCount/8;
-    bitCountText.textContent = `Bitcount: ${bitCount.toString().padStart(8, 0)}`;
-    byteCountText.textContent = `Bytecount: ${byteCount.toString().padStart(8,0)}`;
+    bitCountText.textContent = `Bits: ${bitCount.toString().padStart(4, 0)}`;
+    byteCountText.textContent = `Bytes: ${byteCount.toString().padStart(4,0)}`;
 }
 
 inputString.addEventListener('input', function(){

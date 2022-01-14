@@ -1,3 +1,6 @@
+/* *{
+    border: red solid 1px;
+} */
 body{
     background-color: #4285F4;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,15 +34,21 @@ body{
     background-color: rgb(223, 223, 223);
     border: solid #4285F4 2px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 51px;
     width: 90%;
     min-height: 120px;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
 .counting_section{
     display: flex;
     justify-content: center;
+}
+
+.counter{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 20px;
 }
 
 #output_text{
